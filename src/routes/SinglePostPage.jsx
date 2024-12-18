@@ -115,7 +115,7 @@ const SinglePostPage = () => {
               h="48"
               />
 
-              <Link>John Doe</Link>
+              <Link className='text-blue-800'>John Doe</Link>
 
             </div>
               <p className='text-sm text-gray-500'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi, eveniet.</p>
