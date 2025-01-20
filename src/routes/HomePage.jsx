@@ -4,8 +4,11 @@ import {Link}  from 'react-router-dom'
 import MainCategories from './../components/MainCategories'
 import FeaturedPosts from '../components/FeaturedPosts'
 import PostList from '../components/PostList'
+import axios from 'axios'
+import { useEffect } from 'react'
 
 const HomePage = () => {
+
   return (
     <div  className="mt-4 flex flex-col gap-4">
       {/* BREADCRUMB */}
