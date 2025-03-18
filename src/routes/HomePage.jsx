@@ -6,8 +6,37 @@ import FeaturedPosts from '../components/FeaturedPosts'
 import PostList from '../components/PostList'
 import axios from 'axios'
 import { useEffect } from 'react'
+import JobList from '../components/JobList.jsx'
+
 
 const HomePage = () => {
+
+
+//   useEffect( async () => {
+
+//     try {
+//       console.log('Calling /monthly-task route once a month...');
+//       await axios.get('http://localhost:3000/fatchJob');
+//       console.log('Route called successfully!');
+//   } catch (error) {
+//       console.error('Error calling the route:', error);
+//   }
+
+//   }, [])
+
+  
+
+// // Schedule a task to run on the 1st day of every month at midnight
+// cron.schedule('0 0 1 * *', async () => {
+//     try {
+//         console.log('Calling /monthly-task route once a month...');
+//         await axios.get('http://localhost:3000/fatchJob');
+//         console.log('Route called successfully!');
+//     } catch (error) {
+//         console.error('Error calling the route:', error);
+//     }
+// });
+
 
   return (
     <div  className="mt-4 flex flex-col gap-4">
@@ -82,6 +111,12 @@ const HomePage = () => {
         <h1 className='my-8 text-2xl text-gray-600'>Recent post</h1>
         <PostList />
       </div>
+
+
+      {/* <div className="">
+        <h1 className='my-8 text-2xl text-gray-600'>Job post</h1>
+        <JobList />
+      </div> */}
     </div>
   )
 }

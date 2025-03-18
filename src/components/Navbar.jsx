@@ -8,11 +8,11 @@ function Navbar() {
 
     const [open,setOpen] = useState(false)
 
-    const {getToken} = useAuth();
+    // const {getToken} = useAuth();
 
-    useEffect(() => {
-      getToken().then((token) => console.log(token))
-    }, [])
+    // useEffect(() => {
+    //   getToken().then((token) => console.log(token))
+    // }, [])
 
 
 
